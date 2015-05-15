@@ -4,15 +4,9 @@
 .body-paint{
 	background-color:  #3399ff;
 }
-/* .box-rework{
-	margin-right: 10px;
-} */
 .p1, .input{
 	margin-bottom: 30px;
 }
-/* .btn {
-	margin-left: 205px;
-} */
 label {
 	padding-left: 3px;
 }
@@ -24,9 +18,16 @@ label {
 }
 #bootstrap-overrides .input-group-addon {
 	background-color: white;
-	width: 50px;
-	height: 53px;
+	width: auto;
+	height: auto;
+	margin-left: 1px;
 }
 #bootstrap-overrides .container {
 	background-color: #f5f5db;
 }
+#bootstrap-overrides .input-group{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
