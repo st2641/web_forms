@@ -1,0 +1,32 @@
+.text-field{
+	margin-top: 5px;
+}
+.body-paint{
+	background-color:  #3399ff;
+}
+.box-rework{
+	margin-right: 10px;
+}
+.p1, .input{
+	margin-bottom: 30px;
+}
+.btn {
+	margin-left: 205px;
+}
+label {
+	padding-left: 3px;
+}
+.p1{
+	color:red;
+}
+#bootstrap-overrides .well {
+	margin: 0 20px 0 20px;
+}
+#bootstrap-overrides .input-group-addon {
+	background-color: white;
+	width: 75px;
+	height: 53px;
+}
+#bootstrap-overrides .container {
+	background-color: #f5f5db;
+}
