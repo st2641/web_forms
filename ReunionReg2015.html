@@ -3,16 +3,15 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=devise-width, initial-scale=1">
+		<meta name="viewport" content="width=devise-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 		<title>Great Lakes Regional Reunion Registration</title>
 		<link rel="stylesheet" href="./bootstrap-3.3.2-dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./bootstrap-3.3.2-dist/css/style.css/style1">
 		<link rel="stylesheet" href="./css/RegForm2015.css">
-		<script type="text/javascript" src="js/reg_inputs.js"></script>
+		<script type="text/javascript" src="./js/libs/reg_inputs.js"></script>
 		</head>
 
 <body id="bootstrap-overrides">
-	<form id="reunion_registration" class="body-paint" action="js/reg_inputs.js">
+	<form name="reunionRegistration" class="body-paint" action="./js/reg_inputs.js" method="GET" onsubmit="validate()">
 		<div class="container">
 			<div class="row"><!-- This is a header row -->
 				<div class="col-md-12 text-center">
@@ -20,7 +19,7 @@
 					<h3>Registration Form</h3>
 				</div>
 			</div><!-- /header row -->
-			<div class="row  input"><!-- Starts informational row -->
+			<div class="row input"><!-- Starts informational row -->
 				<hr>
 				<div class="well">
 					<p>There is no registration fee. Reunion expenses will be funded by free will offerings. Contributions may be sent with your registration form. Make checks payable to: “Restoration Branches Reunion Fund”. Approximate cost to cover lodging and meals for the week is $200.00 per person. 
@@ -59,7 +58,7 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-4 text-field">
 					<span>
-						<input type="text" name="reg_addr" class="form-control" placeholder="Street Address *" maxlength="50" aria-describedby="basic-addon1">
+						<input type="text" name="street_address" class="form-control" placeholder="Street Address *" maxlength="50" aria-describedby="basic-addon1">
 					</span>
 				</div>
 				<div class="col-md-3 text-field">
@@ -72,12 +71,12 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-2 text-field">
 					<span>
-						<input type="text" name="state_cd" class="form-control" placeholder="State*" maxlength="2" aria-describedby="basic-addon1">
+						<input type="text" name="state" class="form-control" placeholder="State*" maxlength="2" aria-describedby="basic-addon1">
 					</span>
 				</div>
 				<div id="basic-addon4" class="col-md-2 text-field">
 					<span>
-						<input type="text" name="zip_cd" class="form-control" placeholder="Zip Code*" maxlength="10" aria-describedby="basic-addon1">
+						<input type="text" name="zip_code" class="form-control" placeholder="Zip Code*" maxlength="10" aria-describedby="basic-addon1">
 					</span>
 				</div>
 			</div>
@@ -85,7 +84,7 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-4 text-field">
 					<span>
-						<input type="text" name="phone1" class="form-control" placeholder="Phone Number*" maxlength="12" aria-describedby="basic-addon1">
+						<input type="text" name="phone_number" class="form-control" placeholder="Phone Number*" maxlength="12" aria-describedby="basic-addon1">
 					</span>
 				</div>
 			</div>
@@ -93,7 +92,7 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-4 text-field">
 					<span>
-						<input type="text" name="email_addr" class="form-control" placeholder="email*" maxlength="30" aria-describedby="basic-addon1">
+						<input type="text" name="email_address" class="form-control" placeholder="email*" maxlength="30" aria-describedby="basic-addon1">
 					</span>
 				</div>
 			</div>
@@ -101,7 +100,7 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-4 text-field">
 					<span>
-						<input type="text" name="church_br" class="form-control" placeholder="Branch" maxlength="40" aria-describedby="basic-addon1">
+						<input type="text" name="church_branch" class="form-control" placeholder="Branch" maxlength="40" aria-describedby="basic-addon1">
 					</span>
 				</div>
 			</div>
@@ -109,7 +108,7 @@
 				<div class="col-md-2"></div>
 				<div class="col-md-4">
 					<span>
-						<input type="text" name="emer_contact_nm" class="form-control" placeholder="Emergency Contact Name*" maxlength="40" aria-describedby="basic-addon1">
+						<input type="text" name="emer_contact_name" class="form-control" placeholder="Emergency Contact Name*" maxlength="40" aria-describedby="basic-addon1">
 					</span>
 				</div>
 				<div class="col-md-4">
@@ -141,7 +140,7 @@
 								<tr>
 									<th class="text-center">Name</th>
 									<th class="text-center">Age</th>
-									<th class="text-center">Grade</th>
+									<th class="text-center">Grade (In Fall 2015)</th>
 								</tr>
 
 							</thead>
@@ -173,7 +172,7 @@
 
 							</tbody>
 						</table>
-
+							<p class="p1">Three Columns (Table may Scroll to Right)</p>
 				</div>
 			</div>
 <!-- End of the children attending table -->
@@ -259,7 +258,7 @@
 						<input type="checkbox" name="willow" aria-label="wilLodge"><label>Willow Lodge</label>
 					</span>
 					<span class="input-group-addon">
-						<input type="checkbox" name="rv" aria-label="camTrailRv"><label>Camper -Trailer - RV</label>
+						<input type="checkbox" name="rv" aria-label="camTrailRv"><label>Camper - Trailer - RV</label>
 					</span>
 					<span class="input-group-addon">
 						<input type="checkbox" name="tent" aria-label="tent"><label>Tent</label>
@@ -288,7 +287,7 @@
 				<div class="col-md-5"></div>
 				<div class="col-md-2 btn-group-lg text-center" role="group" aria-label="Process Form">
 					<hr>
-					<button type="button" class="btn btn-default" onClick="processForm">Process Form</button>
+					<button type="button" class="btn btn-default" onClick="validate(this.reunionRegistration)">Process Form</button>
 				</div>
 			</div>
 
