@@ -42,3 +42,45 @@ var offGround            = document.reunionRegistration.not_eating.value;
 var lodging              = ["birLodge","wilLodge","camTrailRv","tent","offGround"];
 var fullHup              = document.forms[0].full_hup.value; 
 var waterElect           = document.forms[0].water_elect.value; 
+
+
+
+//    else if (!streetAddress){
+//        alert ( textError );
+//        return false;
+//    }
+//    else if (!cityCode){
+//        alert ( textError );
+//        return false;
+//    }
+//    else if (!stateCode){
+//        alert ( textError );
+//        return false;
+//    }
+//    else if (!zipCode){
+//        alert ( textError );
+//        return false;
+//    }
+//    else if (!phoneNumber){
+//        alert ( textError );
+//        return false;
+//    }
+//    else if (!emailAddress){
+//        alert ( textError );
+//        return false;
+//    }
+//    else if (!streetAddress){
+//        alert ( textError );
+//        return false;
+//    }
+//    else if (!emergencyContactName){
+//        alert ( textError );
+//        return false;
+//    }
+//    else if (!emergencyContactPhone){
+//        alert ( textError );
+//        return false;
+//    }
+//    
+//    TODO
+    //Create conditions for checkboxes and store (push()) values in arrays. Test the arrays for length and error appropriately.
