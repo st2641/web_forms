@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devise-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>Great Lakes Regional Reunion Registration</title>
+		<link rel="stylesheet" href="./bootstrap-3.3.2-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/RegForm2015.css">
+		<script type="text/javascript" src="./js/libs/reg_inputs.js"></script>
+		</head>
+
+<body id="bootstrap-overrides">
+	<form name="reunionRegistration" class="body-paint" action="./js/reg_inputs.js" method="GET" onsubmit="validate()">
+		<div class="container">
+			<div class="row"><!-- This is a header row -->
+				<div class="col-md-12 text-center">
+					<h2>2015 Great Lakes Restoration Regional Reunion</h2>
+					<h3>Registration Form</h3>
+				</div>
+			</div><!-- /header row -->
+			<div class="row input"><!-- Starts informational row -->
+				<hr>
+				<div class="well">
+					<p>There is no registration fee. Reunion expenses will be funded by free will offerings. Contributions may be sent with your registration form. Make checks payable to: “Restoration Branches Reunion Fund”. Approximate cost to cover lodging and meals for the week is $200.00 per person. 
+Please send registration forms by July 6th to: Helene Danicki, 484 Willow Tree Ln., Rochester Hills, MI 48306</p>
+				</div>
+			</div><!-- /informational row -->
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-1">
+				<p class="p1">* Required</p>
+				</div>
+			</div>
+<!-- The next section is all of the user input (text) fields -->
+			<div id="basic-addon0" class="row">
+				<div class="col-md-2"></div>
+				<div  class="col-md-4">
+					<span>
+						<input type="text" name="fullname" class="form-control" placeholder="Full Name (First Last) *" maxlength="40" aria-describedby="basic-addon1">
+					</span>
+				</div>
+				<div class="col-md-4">
+					<span>
+						<input type="text" name="spouse" class="form-control" placeholder="Spouse" maxlength="40" aria-describedby="basic-addon1">
+					</span>
+				</div>
+			</div>
+			<div id="basic-addon1" class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 text-field">
+					<span>
+						<input type="text" name="ph_office" class="form-control" placeholder="Priesthood Office Held" maxlength="15" aria-describedby="basic-addon1">
+					</span>
+				</div>
+			</div>
+			<div id="basic-addon2" class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 text-field">
+					<span>
+						<input type="text" name="street_address" class="form-control" placeholder="Street Address *" maxlength="50" aria-describedby="basic-addon1">
+					</span>
+				</div>
+				<div class="col-md-3 text-field">
+					<span>
+						<input type="text" name="city" class="form-control" placeholder="City*" maxlength="20" aria-describedby="basic-addon1">
+					</span>
+				</div>
+			</div>
+			<div id="basic-addon3" class="row input">
+				<div class="col-md-2"></div>
+				<div class="col-md-2 text-field">
+					<span>
+						<input type="text" name="state" class="form-control" placeholder="State*" maxlength="2" aria-describedby="basic-addon1">
+					</span>
+				</div>
+				<div id="basic-addon4" class="col-md-2 text-field">
+					<span>
+						<input type="text" name="zip_code" class="form-control" placeholder="Zip Code*" maxlength="10" aria-describedby="basic-addon1">
+					</span>
+				</div>
+			</div>
+			<div id="basic-addon5" class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 text-field">
+					<span>
+						<input type="text" name="phone_number" class="form-control" placeholder="Phone Number*" maxlength="12" aria-describedby="basic-addon1">
+					</span>
+				</div>
+			</div>
+			<div id="basic-addon6" class="row input">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 text-field">
+					<span>
+						<input type="text" name="email_address" class="form-control" placeholder="email*" maxlength="30" aria-describedby="basic-addon1">
+					</span>
+				</div>
+			</div>
+			<div id="basic-addon7" class="row input">
+				<div class="col-md-2"></div>
+				<div class="col-md-4 text-field">
+					<span>
+						<input type="text" name="church_branch" class="form-control" placeholder="Branch" maxlength="40" aria-describedby="basic-addon1">
+					</span>
+				</div>
+			</div>
+			<div id="basic-addon8" class="row input">
+				<div class="col-md-2"></div>
+				<div class="col-md-4">
+					<span>
+						<input type="text" name="emer_contact_name" class="form-control" placeholder="Emergency Contact Name*" maxlength="40" aria-describedby="basic-addon1">
+					</span>
+				</div>
+				<div class="col-md-4">
+					<input type="text" name="emer_contact_phone" class="form-control" placeholder="Emergency Contact Phone*" maxlength="12" aria-describedby="basic-addon1">
+				</div>
+			</div>
+			<div id="basic-addon9" class="row input">
+				<div class="col-md-2"></div>
+				<div class="col-md-4">
+					<span>
+						<input type="text" name="med_train" class="form-control" placeholder="List any Medical Training Here" maxlength="75" aria-describedby="basic-addon1">
+					</span>
+				</div>
+			</div>
+<!-- /end of the user input (text) fields -->
+<!-- The next section begins the children attending table -->
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-center"><h3>Children Attending</h3></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 table-responsive">
+
+						<table class="table">
+							<thead>
+
+								<tr>
+									<th class="text-center">Name</th>
+									<th class="text-center">Age</th>
+									<th class="text-center">Grade (In Fall 2015)</th>
+								</tr>
+
+							</thead>
+							<tbody>
+
+								<tr>
+									<td><input type="text" name="child1" id="kidTable1a" maxlength="12"></td>
+									<td><input type="text" name="age1" id="kidTable1b" maxlength="2"></td>
+									<td><input type="text" name="grade1" id="kidTable1c" maxlength="2" ></td>
+								</tr>
+
+								<tr>
+									<td><input type="text" name="child2" id="kidTable2a" maxlength="12"></td>
+									<td><input type="text" name="age2" id="kidTable2b" maxlength="2"></td>
+									<td><input type="text" name="grade2" id="kidTable2c" maxlength="2"></td>
+								</tr>
+
+								<tr>
+									<td><input type="text" name="child3" id="kidTable3a" maxlength="12"></td>
+									<td><input type="text" name="age3" id="kidTable3b" maxlength="2"></td>
+									<td><input type="text" name="grade3" id="kidTable3c" maxlength="2"></td>
+								</tr>
+
+								<tr>
+									<td><input type="text" name="child4" id="kidTable4a" maxlength="12"></td>
+									<td><input type="text" name="age4" id="kidTable4b" maxlength="2"></td>
+									<td><input type="text" name="grade4" id="kidTable4c" maxlength="2"></td>
+								</tr>
+
+							</tbody>
+						</table>
+							<p class="p1">Three Columns (Table may Scroll to Right)</p>
+				</div>
+			</div>
+<!-- End of the children attending table -->
+<!-- Begins the checkbox group for days attending -->
+			<div class="row"><!--Begins checkbox group-->
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-center">
+					<h4>Days You Plan to Attend the Reunion *</h4>
+				</div>
+			</div>
+
+			<div class="row input">
+				<div class="col-md-1"></div>
+				<div class="col-md-6 input-group text-center center-block ">
+                                        <span class="input-group-addon">
+                                            <label>
+						<input type="checkbox"  onClick="selectAll(this)"  aria-label="Check All">
+                                                Check All
+                                            </label>
+					</span>
+					<span class="input-group-addon">
+                                            <label>
+						<input type="checkbox" class="check" name="Monday"  aria-label="Monday">
+                                                M
+                                            </label>
+					</span>
+					<span class="input-group-addon">
+                                            <label>
+						<input type="checkbox" class="check" name="Tuesday"  aria-label="Tuesday">
+                                                T
+                                            </label>
+					</span>
+					<span class="input-group-addon">
+                                            <label>
+						<input type="checkbox" class="check" name="Wednesday" aria-label="Wednesday">
+                                                W
+                                            </label>
+					</span>
+					<span class="input-group-addon">
+                                            <label>
+						<input type="checkbox" class="check" name="Thursday" aria-label="Thursday">
+                                                TH
+                                            </label>
+					</span>
+					<span class="input-group-addon">
+                                            <label>
+						<input type="checkbox" class="check" name="Friday" aria-label="Friday">
+                                                F
+                                            </label>
+					</span>
+					<span class="input-group-addon">
+                                            <label>
+						<input type="checkbox" class="check" name="Saturday" aria-label="Saturday">
+                                                SAT
+                                            </label>
+					</span>
+					<span class="input-group-addon">
+                                            <label>
+						<input type="checkbox" class="check" name="Sunday" aria-label="Sunday">
+                                                SUN
+                                            </label>
+					</span>
+				</div><!-- /checkbox section-->
+			</div><!--Ends Checkbox row-->
+
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 input">
+					<hr>
+					<h4>I/we will arrive before noon on Monday and eat lunch. *</h4>
+					<span class="input-group-addon">
+						<label>
+							<input type="radio" name="before_noon_monday" value="Yes" id="before_noon" aria-label="yes">
+							Yes
+						</label>
+					</span>
+					<span class="input-group-addon">
+						<label>
+							<input type="radio" name="before_noon_monday" value="No" id="not_before_noon" aria-label="no">
+							No
+						</label>
+					</span>
+				</div>
+			</div>
+
+			<div class="row"><!-- begin meal planning checkbox row-->
+				<div class="col-md-3"></div>
+				<div class="col-md-6 input"><!-- begin meal planning checkbox section-->
+					<hr>
+					<h4>I/we will be eating meals at reunion *</h4>
+					<span class="input-group-addon">
+						<label>
+							<input type="radio" name="eat_option" value="Yes" id="yes" aria-label="yes">
+							Yes
+						</label>
+					</span>
+					<span class="input-group-addon">
+						<label>
+							<input type="radio" name="eat_option" value="No" id="no" aria-label="no">
+							No
+						</label>
+					</span>
+				</div><!-- /meal planning checkbox section-->
+			</div><!-- /meal planning checkbox row-->
+
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 text-center">
+					<hr>
+					<h3>Lodging *</h3>
+				</div>
+			</div>
+
+			<div class="row input"><!-- begin lodging checkbox row-->
+				<div class="col-md-3"></div>
+				<div class="col-md-7 input-group"><!-- begin lodging checkbox section-->
+
+					<span class="input-group-addon">
+						<label>
+							<input type="checkbox" name="birch" class="lodge" aria-label="birLodge">
+							Birch Lodge
+						</label>
+					</span>
+					<span class="input-group-addon">
+						<label>
+							<input type="checkbox" name="willow" class="lodge" aria-label="wilLodge">
+							Willow Lodge
+						</label>
+					</span>
+					<span class="input-group-addon">
+						<label>
+							<input type="checkbox" name="rv" class="lodge" aria-label="camTrailRv">
+							Camper - Trailer - RV
+						</label>
+					</span>
+					<span class="input-group-addon">
+						<label>
+							<input type="checkbox" name="tent" class="lodge" aria-label="tent">
+							Tent
+						</label>
+					</span>
+					<span class="input-group-addon">
+						<label>
+							<input type="checkbox" name="off_ground" class="lodge" aria-label="offGround">
+							Off Grounds
+						</label>
+					</span>
+
+				</div><!-- /checkbox section-->
+			</div><!--/Checkbox row-->
+
+			<div class="row"><!-- begin lodging amenities checkbox row-->
+				<div class="col-md-3"></div>
+				<div class="col-md-6"><!-- begin lodging amenities checkbox section-->
+					<h4>Type of Camper/RV Hookups Needed (If Applicable)</h4>
+					<span class="input-group-addon">
+						<label>
+							<input type="radio" name="utility" id="full_hup" aria-label="fullHookup">
+							Full Hookup
+						</label>
+					</span>
+					<span class="input-group-addon">
+						<input type="radio" name="utility" id="water_elect" aria-label="waterElectric"><label>Water & Electric</label>
+					</span>
+				</div><!-- begin lodging amenities checkbox section-->
+			</div><!-- begin lodging amenities checkbox row-->
+
+			<div class="row input">
+				<div class="col-md-5"></div>
+				<div class="col-md-2 btn-group-lg text-center" role="group" aria-label="Process Form">
+					<hr>
+					<button type="button" class="btn btn-default" onClick="validate(this.reunionRegistration)">Process Form</button>
+				</div>
+			</div>
+
+		</div>
+	</form>
+</body>
+
+</html>
