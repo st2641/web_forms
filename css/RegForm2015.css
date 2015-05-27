@@ -14,7 +14,7 @@ and open the template in the editor.
 .body-paint{
     background-color:  #3399ff;
 }
-.p1 .input{
+.p1, .input{
     margin-bottom: 30px;
 }
 .label{
