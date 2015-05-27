@@ -36,7 +36,7 @@ var days                 = [];
 var textFieldsReq = document.getElementsByName('textFieldReq');
 
 for(i=0,n=textFieldsReq.length;i<n;i++){
-    if ( !textFieldsReq[i].value ){
+    if ( !textFieldsReq[i] ){
         alert ( 'You need to fill in ' + textFieldsReq[i] + '!');
         textFieldsReq[i].focus();
         return false;
