@@ -1,49 +1,66 @@
 //Check to make sure that all required field are filled out
 //ref http://www.quirksmode.org/dom/error.html
 
+//var streetAddress        = document.getElementsByName.textFieldsReq[];
+//var cityCode             = document.getElementsByName.textFieldsReq[];
+//var stateCode            = document.getElementsByName.textFieldsReq[];
+//var zipCode              = document.getElementsByName.textFieldsReq[];
+//var phoneNumber          = document.getElementsByName.textFieldsReq[];
+//var emailAddress         = document.getElementsByName.textFieldsReq[];
+//var emergencyContactName = document.getElementsByName.textFieldsReq[];
+//var emergencyContactPhone= document.getElementsByName.textFieldsReq[];   
+//var mondayCheck          = document.getElementsByName.textFieldsReq[];
+//var tuesdayCheck         = document.getElementsByName.textFieldsReq[];
+//var wednesdayCheck       = document.getElementsByName.textFieldsReq[];
+//var thursdayCheck        = document.getElementsByName.textFieldsReq[];
+//var fridayCheck          = document.getElementsByName.textFieldsReq[];
+//var saturdayCheck        = document.getElementsByName.textFieldsReq[];
+//var sundayCheck          = document.getElementsByName.textFieldsReq[];
+//var beforeNoonMonYes     = document.getElementsByName.textFieldsReq[]; 
+//var beforeNoonMonNo      = document.getElementsByName.textFieldsReq[]; 
+//var eatMealsReunion      = document.getElementsByName.textFieldsReq[];
+//var noMealsReunion       = document.getElementsByName.textFieldsReq[];
+//var birLodge             = document.getElementsByName.textFieldsReq[];
+//var wilLodge             = document.getElementsByName.textFieldsReq[];
+//var camTrailRv           = document.getElementsByName.textFieldsReq[];
+//var tent                 = document.getElementsByName.textFieldsReq[];
+//var offGround            = document.getElementsByName.textFieldsReq[];
+//var fullName             = document.getElementsByName.textFieldsReq[];
 
-function validate(reunionRegistration){
+function validate(textFieldsReq){
 //variable declaration for form inputs
-var fullName             = document.reunionRegistration.fullname.value;
-var streetAddress        = document.reunionRegistration.street_address.value;
-var cityCode             = document.reunionRegistration.city.value;
-var stateCode            = document.reunionRegistration.state.value;
-var zipCode              = document.reunionRegistration.zip_code.value;
-var phoneNumber          = document.reunionRegistration.phone_number.value;
-var emailAddress         = document.reunionRegistration.email_address.value;
-var emergencyContactName = document.reunionRegistration.emer_contact_name.value;
-var emergencyContactPhone= document.reunionRegistration.emer_contact_phone.value;   
-var mondayCheck          = document.reunionRegistration.days.value;
-var tuesdayCheck         = document.reunionRegistration.days.value;
-var wednesdayCheck       = document.reunionRegistration.days.value;
-var thursdayCheck        = document.reunionRegistration.days.value;
-var fridayCheck          = document.reunionRegistration.days.value;
-var saturdayCheck        = document.reunionRegistration.days.value;
-var sundayCheck          = document.reunionRegistration.days.value;
-var beforeNoonMonYes     = document.reunionRegistration.before_noon_monday.value; 
-var beforeNoonMonNo      = document.reunionRegistration.before_noon_monday.value; 
-var eatMealsReunion      = document.reunionRegistration.eat_option.value; 
-var noMealsReunion       = document.reunionRegistration.eat_option.value;  
-var birLodge             = document.reunionRegistration.birch.value; 
-var wilLodge             = document.reunionRegistration.willow.value; 
-var camTrailRv           = document.reunionRegistration.rv.value;
-var tent                 = document.reunionRegistration.tent.value; 
-var offGround            = document.reunionRegistration.off_ground.value;
+
+
 var textError            = "Please fill in the required '*' fields";
-var checkBoxError        = "Please Select the Appropriate Boxes";
-var lodging              = [];
-var days                 = [];
+
 var textFieldsReq = document.getElementsByName('textFieldReq');
 
-for(i=0,n=textFieldsReq.length;i<n;i++){
-    if ( !textFieldsReq[i] ){
-        alert ( 'You need to fill in ' + textFieldsReq[i] + '!');
+for(i=0,n=textFieldsReq.length;i<=n;i++){
+    if ( textFieldsReq[i] === '' ){
+        alert ( 'You need to fill in the required* text field!');
         textFieldsReq[i].focus();
         return false;
         }
     }
+    
     return true;
 };
+
+
+//var daysArray = [];
+//
+//function check(days){
+//    var days = documnet.getElementsByName('days');
+//    for(i=0,n=days.length;i<n;i++;){
+//        if(days[i].length === 0){
+//            alert('You need to check at least one day!')
+//            days[i].focus();
+//            return false;
+//        }
+//    }
+//    
+//    daysArray = days.push();
+//}
 
 //Check all button for Days
 function selectAll(form){
@@ -75,7 +92,7 @@ function selectAll(form){
 //	firstError = null;
 //	errorstring = '';
 //	var textError       = 'This field is required';
-//        var fullName        = document.reunionRegistration.fullname.value;
+//        var fullName        = document.getElementsByName.textFieldsReq[].fullname.value;
 //        var email_address   = document.reunionRegistration.email_address.value;
 //
 //		if  ( !fullName.value )
