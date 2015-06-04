@@ -26,50 +26,70 @@
 //var tent                 = document.getElementsByName.textFieldsReq[];
 //var offGround            = document.getElementsByName.textFieldsReq[];
 //var fullName             = document.getElementsByName.textFieldsReq[];
+//Global Variables
+var checkboxes = document.getElementsByName('days');
+var valid      = false;
 
-function validate(textFieldsReq){
-//variable declaration for form inputs
 
 
-var textError            = "Please fill in the required '*' fields";
 
-var textFieldsReq = document.getElementsByName('textFieldReq');
 
-for(i=0,n=textFieldsReq.length;i<=n;i++){
-    if ( textFieldsReq[i] === '' ){
-        alert ( 'You need to fill in the required* text field!');
-        textFieldsReq[i].focus();
-        return false;
+function textFieldValid(){
+    var textFieldsReq = document.getElementsByName('textFieldReq');
+    for( var i=0;i<9;i++ ){
+        if ( !textFieldsReq[i].value ){
+            alert ( 'You need to fill in the required* text field!' );
+            textFieldsReq[i].focus();
+            return false;
         }
     }
-    
+    //if valid return true
     return true;
 };
+   
 
-
-//var daysArray = [];
-//
-//function check(days){
-//    var days = documnet.getElementsByName('days');
-//    for(i=0,n=days.length;i<n;i++;){
-//        if(days[i].length === 0){
-//            alert('You need to check at least one day!')
-//            days[i].focus();
-//            return false;
-//        }
-//    }
-//    
-//    daysArray = days.push();
-//}
-
-//Check all button for Days
-function selectAll(form){
-    var checkboxes = document.getElementsByName('days');
-    for(var i=0,n=checkboxes.length;i<n;i++){
-    checkboxes[i].checked = form.checked;
+function checkboxesValid(){
+    for ( var i = 0;i<checkboxes.length;i++ ){
+        if ( checkboxes[i].checked ) {
+         valid = true;
+         break;
+        }
     }
+    if ( !valid ) {
+        alert( 'You need to select at least one day!' );
+        checkboxes[0].focus();
+        return false;
+    }
+    return valid;
 };
 
+function lodgeValid(){
+    var lodging = document.getElementsByName('lodge');
+    for( var i=0; i<lodging.length; i++ ){
+        if( lodging[i].checked ){
+            valid=true;
+            break;
+        }
+    }
+    if ( !valid ) {
+        alert( 'You need to select at least one option!' );
+        lodging[0].focus();
+        return false;
+    }
+    return valid;
+};
+
+
+function validate(textFieldsReq){
+    return textFieldValid() && checkboxesValid() && lodgeValid();    
+};
+
+function selectAll( form ){
+    for( var i=0,n=checkboxes.length;i<n;i++ ){
+        checkboxes[i].checked = form.checked;
+    }    
+    return true;
+};
 
 
 
