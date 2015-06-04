@@ -11,7 +11,10 @@
 		</head>
 
 <body id="bootstrap-overrides">
-	<form name="reunionRegistration" class="body-paint" action="./js/reg_inputs.js" method="GET" onsubmit="validate()">
+	<form name="reunionRegistration" class="body-paint" action="http://zionelectronicsolutions.com/cgi-sys/formmail.pl" method="post" onsubmit="return validate(this.reunionRegistration)">
+            <input type="hidden" name="recipient" value="shaun.cell74@gmail.com"> 
+            <input type="hidden" name="subject" value="Reunion Registration 2015"> 
+            <input type="hidden" name="redirect" value="http://zionelectronicsolutions.com/SubmitSuccess.html"> 
 		<div class="container">
 			<div class="row"><!-- This is a header row -->
 				<div class="col-md-12 text-center">
@@ -345,7 +348,7 @@ Please send registration forms by July 6th to: Helene Danicki, 484 Willow Tree L
 				<div class="col-md-5"></div>
 				<div class="col-md-2 btn-group-lg text-center input" role="group" aria-label="Process Form">
 					<hr>
-					<button type="button" class="btn btn-default" onClick="validate(this.reunionRegistration)">Process Form</button>
+					<button type="submit" class="btn btn-default" value="submit">Submit Form</button>
 				</div>
 			</div>
 
