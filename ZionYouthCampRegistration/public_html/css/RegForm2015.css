@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 18, 2015, 2:45:53 PM
+    Author     : Shaun
+*/
+
+.text-field{
+    margin-top: 5px;
+}
+.body-paint{
+    background-color:  #3399ff;
+}
+.p1, .input{
+    margin-bottom: 30px;
+}
+.label{
+    padding-left: 3px;
+}
+.p1{
+    color:red;
+}
+#bootstrap-overrides .well{
+    margin: 0 20px 0 20px;
+}
+#bootstrap-overrides .input-group-addon{
+    background-color: white;
+    width: auto;
+    height: auto;
+}
+#bootstrap-overrides .container{
+    background-color: #f5f5db;
+}
+#bootstrap-overrides .input-group{
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+}
+
+
