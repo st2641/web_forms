@@ -12,7 +12,7 @@
 
 <body id="bootstrap-overrides">
 	<form name="reunionRegistration" class="body-paint" action="http://zionelectronicsolutions.com/cgi-sys/formmail.pl" method="post" onsubmit="return validate(this.reunionRegistration)">
-            <input type="hidden" name="recipient" value="shaun.cell74@gmail.com"> 
+            <input type="hidden" name="recipient" value="admin@zionelectronicsolutions.com"> 
             <input type="hidden" name="subject" value="Reunion Registration 2015"> 
             <input type="hidden" name="redirect" value="http://zionelectronicsolutions.com/SubmitSuccess.html"> 
 		<div class="container">
@@ -248,7 +248,7 @@ Please send registration forms by July 6th to: Helene Danicki, 484 Willow Tree L
 					<h4>I/we will arrive before noon on Monday and eat lunch. *</h4>
 					<span class="input-group-addon">
 						<label>
-							<input type="radio" name="before_noon_monday" value="Yes" id="before_noon" aria-label="yes">
+							<input type="radio" name="before_noon_monday" value="Yes" checked="checked" id="before_noon" aria-label="yes">
 							Yes
 						</label>
 					</span>
@@ -268,7 +268,7 @@ Please send registration forms by July 6th to: Helene Danicki, 484 Willow Tree L
 					<h4>I/we will be eating meals at reunion *</h4>
 					<span class="input-group-addon">
 						<label>
-							<input type="radio" name="eat_option" value="Yes" id="yes" aria-label="yes">
+							<input type="radio" name="eat_option" value="Yes" checked="checked" id="yes" aria-label="yes">
 							Yes
 						</label>
 					</span>
@@ -334,12 +334,12 @@ Please send registration forms by July 6th to: Helene Danicki, 484 Willow Tree L
 					<h4>Type of Camper/RV Hookups Needed (If Applicable)</h4>
 					<span class="input-group-addon">
 						<label>
-							<input type="radio" name="utility" id="full_hup" aria-label="fullHookup">
+							<input type="radio" name="utility" id="full_hup" value="Full-Hookup" aria-label="fullHookup">
 							Full Hookup
 						</label>
 					</span>
 					<span class="input-group-addon">
-						<input type="radio" name="utility" id="water_elect" aria-label="waterElectric"><label>Water & Electric</label>
+						<input type="radio" name="utility" id="water_elect" value="water & Elect" aria-label="waterElectric"><label>Water & Electric</label>
 					</span>
 				</div><!-- begin lodging amenities checkbox section-->
 			</div><!-- begin lodging amenities checkbox row-->
